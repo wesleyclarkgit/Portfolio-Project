@@ -5,8 +5,8 @@ After=network.target
 [Service]
 User=djangodeploy
 Group=www-data
-WorkingDirectory=/home/djangodeploy/wesle_portfolio_project
-ExecStart=/home/sammy/myproject/myprojectenv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/sammy/myproject/myproject.sock myproject.wsgi:application
+WorkingDirectory=/home/djangodeploy/Portfolio-Project
+ExecStart=/home/djangodeploy/portfolio_ve/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/djangodeploy/Portfolio-Project/wesley_portfolio.sock wesley_portfolio.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
