@@ -24,6 +24,11 @@
         user-select: none;
       }
 
+      .JumboHeaderImg{
+        background-image: img src="{% static 'Wes Headshot.jpg' %}";
+        background-size: cover;
+      }
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -61,7 +66,7 @@
 
 <main role="main">
 
-  <section class="jumbotron fluid-jumbotron text-center">
+  <section class="jumbotron fluid-jumbotron text-center JumboHeaderImg">
     <div class="container">
       <h1 class="jumbotron-heading">Recent Work</h1>
       <p class="lead text-muted">Here's what I've been up to of late.</p>
