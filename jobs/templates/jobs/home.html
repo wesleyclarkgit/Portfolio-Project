@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {% load staticfiles %}
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -25,7 +25,7 @@
       }
 
       .JumboHeaderImg{
-        background-image: img src="{% static 'Wes Headshot.jpg' %}";
+        background-image: img src="/static/Wes%20Headshot.jpg";
         background-size: cover;
       }
 
@@ -34,27 +34,21 @@
           font-size: 3.5rem;
         }
       }
-
-      body {
-  background-image: img src="{% 'DC_Crime_Cluster.png' %}";
-  background-repeat: no-repeat;
-  background-position: right top;
-}
     </style>
   </head>
   <body>
     <header><nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="{% url 'home' %}">Wesley Clark</a>
+  <a class="navbar-brand" href="/">Wesley Clark</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="{% static 'Resume_WesleyClark.pdf' %}">Resume</a>
+        <a class="nav-link" href="/static/Resume_WesleyClark.pdf">Resume</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'allblogs' %}">Blog</a>
+        <a class="nav-link" href="/blog/">Blog</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/wesleyclarkgit">GitHub</a>
@@ -74,7 +68,7 @@
       <p>
         <a href="mailto:iamwesleyclark@gmail.com" class="btn btn-primary my-2">Contact Me</a>
       </p>
-      <img src="{% static 'Wes Headshot.jpg' %}" height ="300"/>
+      <img src="/static/Wes%20Headshot.jpg" height ="300"/>
     </div>
   </section>
 
@@ -84,23 +78,43 @@
     <div class="container">
 
       <div class="row">
-        {% for job in jobs.all %}
+
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" src="{{ job.image.url }}"
+            <img class="card-img-top" src="/media/images/blogimage_jKbb5Za.jpeg"
             <div class="card-body">
-              <p class="card-text">{{ job.summary }}</p>
+              <p class="card-text">job 1</p>
             </div>
           </div>
         </div>
-          {% endfor %}
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="/media/images/blogimage_gJsyjAv.jpeg"
+            <div class="card-body">
+              <p class="card-text">job 2</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="/media/images/blogimage_bgEeUY9.jpeg"
+            <div class="card-body">
+              <p class="card-text">job 3</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
+
 </main>
+
 <footer class="text-muted">
   <div class="container text-center">
-    <p> © Wesley Clark {% now "Y" %}👾 </p>
+    <p> © Wesley Clark 2019👾 </p>
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
