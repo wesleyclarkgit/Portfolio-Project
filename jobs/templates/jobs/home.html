@@ -15,7 +15,49 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-      .bd-placeholder-img {
+
+
+
+
+
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
+
+    .card_h1 {
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 6rem;
+      color:white;
+      word-wrap: break-word;
+      text-align: center;
+    }
+    .card_h2 {
+      font-size: 2rem;
+      word-wrap:break-word;
+      color: white;
+      text-align: center;
+    }
+    .card_p {
+      margin: 0;
+      font-size: 1.3rem;
+    }
+
+    .card_main {
+      max-width: 500px;
+      margin: 20px auto;
+    }
+
+    .card_background {
+      background: linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5));}
+
+
+
+
+
+
+
+      .DC_Crime_Cluster_img {
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
@@ -36,12 +78,9 @@
       }
 
       .opacity{
-        opacity: 0.2;
-        filter: alpha(opacity=50); /* For IE8 and earlier */
+        opacity: .15;
       }
-      .opacity:hover{
-        opacity: 0.5;
-        filter: alpha(opacity=100); /* For IE8 and earlier */
+
       }
     </style>
   </head>
@@ -85,48 +124,38 @@
 
   <div class="album py-5 bg-light">
     <div class="container">
-
       <div class="row">
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" src="/media/images/blogimage_jKbb5Za.jpeg"
-            <div class="card-body">
-              <p class="card-text">job 1</p>
+        </div>
+          </div>
+          <div class="title card bg-dark card_title ">
+            <img class="card-img p-2 opacity " src="/static/DC_Crime_Cluster.png" alt="Washington DC Crime">
+            <div class="card-img-overlay">
+              <h5 class="card_h1 ">DC Crime</h5>
+              <p class="card_h2">Differentiating between violent and non-violent with 93% success </p>
             </div>
           </div>
         </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" src="/media/images/blogimage_gJsyjAv.jpeg"
-            <div class="card-body">
-              <p class="card-text">job 2</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" src="/media/images/blogimage_bgEeUY9.jpeg"
-            <div class="card-body">
-              <p class="card-text">job 3</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="card bg-dark text-black">
-          <img class="card-img opacity:hover" src="/static/DC_Crime_Cluster.png" alt="Card image">
-          <div class="card-img-overlay">
-            <h5 class="card-title font-weight-bold text-uppercase">DC Crime</h5>
-            <p class="card-text font-weight-bold">Analysis of crime in Washington DC over a 10 year period</p>
-          </div>
-        </div>
-
       </div>
     </div>
-  </div>
+
+
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          </div>
+            </div>
+            <div class="title card bg-dark card_title ">
+              <img class="card-img p-2 opacity " src="/static/twitter_bird.png" alt="Washington DC Crime">
+              <div class="card-img-overlay">
+                <h5 class="card_h1 ">DC Crime</h5>
+                <p class="card_h2">Differentiating between violent and non-violent with 93% success </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
 </main>
 
