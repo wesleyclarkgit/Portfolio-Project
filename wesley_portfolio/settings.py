@@ -125,7 +125,7 @@ USE_TZ = True
 
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'wesley_portfolio_project/static/')
+    os.path.join(BASE_DIR, 'wesley_portfolio/static/')
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
